@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package common.protobuf;
+
+//登陆
+message CSLogin {
+	string account = 1;
+	string password = 2;
+	bool is_login = 3;
+}
+
+//登陆返回
+message SCLogin {
+	int32 result_code = 1;
+}
+
+//提示信息返回
+message SCNotice{
+	int32 notice_code = 1;
+	string param = 2;
+}
