@@ -1,9 +1,15 @@
 color 0A && echo off
 
 set "WORK_DIR=%cd%"
+
 cd ../Server/Server/Socket/Protocol/
 set "CS_OUT_PATH=%cd%"
 cd %WORK_DIR%
+
+cd ../Client/Protocol/
+set "JS_OUT_PATH=%cd%"
+cd %WORK_DIR%
+
 set "PROTOC_EXE=%WORK_DIR%/protoc.exe"
 
 %PROTOC_EXE% --version
